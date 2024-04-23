@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+section {
+  padding: 0 3rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  header,
+  main,
+  section {
+    padding: 0 2rem;
+  }
+}
+
+/* Cabeçalho */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+nav a {
+  display: inline-block;
+  width: inherit;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  nav a {
+    min-width: 100%;
+  }
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+.nome {
+  background-color: #e6e6e6;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  margin: 0rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a:link.nome {
+  color: black;
+}
+
+/* visited link */
+a:visited.nome {
+  color: black;
+}
+
+/* mouse over link */
+a:hover.nome {
+  color: black;
+}
+
+/* Perfil */
+
+.perfil-imagem img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+.perfil-nome {
+  color: #0d99ff;
+}
+
+.perfil-descricao {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .perfil-descricao {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    height: 10rem;
+  }
+}
+
+.perfil-enderecos {
+  list-style: none;
+  padding: 0px;
+}
+
+.perfil-social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a.social-media {
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .perfil {
+    padding: 0;
+  }
+  .perfil-imagem {
+    display: flex;
+    justify-content: center;
+  }
+  .perfil-imagem img {
+    max-width: 10rem;
+    height: 10rem;
+  }
+}
+
+.card-repo {
+  border: none !important;
+}
+
+.card-repo a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+a:link.card-link {
+  color: black;
+}
+
+/* visited link */
+a:visited.card-link {
+  color: black;
+}
+
+/* mouse over link */
+a:hover.card-link {
+  color: black;
+}
+
+.card-repo-descricao {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 5rem;
+}
+
+.card-repo-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  border: none !important;
+  background-color: white !important;
+}
+
+.carousel-item {
+  text-align: center !important;
+  height: 30rem !important;
+  background-color: #bde3ff;
+}
+
+.img-carousel {
+  min-width: 90%;
+  background-color: rgba(128, 128, 128, 0.61);
+}
+
+.carousel-caption {
+  background-color: rgba(158, 158, 158, 0.6);
+}
+
+.card-colegas {
+  border: none !important;
+}
+
+.card-colegas-body {
+  border: 1px solid #888888;
+  border-radius: 8px;
+  padding: 8px !important;
+  box-shadow: 0.1px 0.5px 1px 0.1px #9e9e9e;
+  margin-bottom: 16px;
+}
+
+.card-colegas-footer {
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-colegas img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  border-radius: 4px;
+}
+
+.card-colegas-footer {
+  border: none !important;
+  background-color: white !important;
+}
+
+.card-colegas-footer a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:link.nome {
+  color: black;
+}
+
+/* visited link */
+a:visited.nome {
+  color: black;
+}
+
+/* mouse over link */
+a:hover.nome {
+  color: black;
+}
+
+.botao-topico {
+  background-color: #0d99ff;
+  color: white;
+  border-radius: 20px;
+  width: auto;
+  border: none;
+  text-align: center;
+  align-items: center;
+  padding: 16px;
+  font-weight: 600;
+  margin: 4px 8px;
+}
+
+footer {
+  display: block;
+  background-color: #c4c4c4;
+  margin-top: auto;
+  text-align: center;
+  height: 100px;
+  font-size: 16px;
+  border: none;
+  padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 130px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
